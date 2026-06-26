@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arpit Vishwakarma | Portfolio</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="bg-shape shape1"></div>
+  <div class="bg-shape shape2"></div>
+  <div class="cursor-glow"></div>
+
+  <header class="hero">
+    <div class="hero-content">
+      <p class="badge fade-in">✨ Python Developer</p>
+      <h1 class="fade-in-delayed-1">Hi, I'm <span class="gradient-text">Arpit Vishwakarma</span></h1>
+      <p class="typing fade-in-delayed-2">Python • Data Analyst • Web Developer • Excel • Graphic Design </p>
+      <div class="hero-actions fade-in-delayed-3">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="#contact" class="btn btn-outline">Contact Me</a>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span></span>
+    </div>
+  </header>
+
+  <main>
+    <section class="section reveal" id="about">
+      <div class="section-content">
+        <h2 class="section-title">About Me</h2>
+        <p class="section-description">Aspiring Data Analyst with strong knowledge of Python, SQL, Microsoft Excel, Data Visualization, and Data 
+Cleaning. Skilled in analyzing datasets, creating reports, identifying trends, and supporting data-driven 
+decision-making. Familiar with Power BI, Pandas, NumPy, and statistical analysis. Passionate about 
+transforming raw data into meaningful insights and continuously learning modern analytics tools and 
+techniques. </p>
+        <h3 class="section-subtitle">Technical Skills</h3>
+        <div class="skills-grid">
+          <div class="skill-card" style="--delay: 0.1s">
+            <img class="skill-icon" src="{{ url_for('static', filename='icons/python.svg') }}" alt="Python logo" />
+            <span class="skill-name">Python</span>
+          </div>
+          <div class="skill-card" style="--delay: 0.2s">
+            <span class="skill-icon">🧠</span>
+            <span class="skill-name">SQL</span>
+          </div>
+          <div class="skill-card" style="--delay: 0.3s">
+            <span class="skill-icon">🌐</span>
+            <span class="skill-name">HTML5</span>
+          </div>
+          <div class="skill-card" style="--delay: 0.4s">
+            <img class="skill-icon" src="{{ url_for('static', filename='icons/css3.svg') }}" alt="CSS3 logo" />
+            <span class="skill-name">CSS3</span>
+          </div>
+          <div class="skill-card" style="--delay: 0.5s">
+            <img class="skill-icon" src="{{ url_for('static', filename='icons/ms-access.svg') }}" alt="MS Access logo" />
+            <span class="skill-name">MS Access</span>
+          </div>
+          <div class="skill-card" style="--delay: 0.6s">
+            <img class="skill-icon" src="{{ url_for('static', filename='icons/wordpress.svg') }}" alt="WordPress logo" />
+            <span class="skill-name">WordPress</span>
+          </div>
+          <div class="skill-card" style="--delay: 0.7s">
+            <img class="skill-icon" src="{{ url_for('static', filename='icons/adobe-photoshop.svg') }}" alt="Adobe Photoshop logo" />
+            <span class="skill-name">Adobe Photoshop</span>
+          </div>
+          <div class="skill-card" style="--delay: 0.8s">
+            <img class="skill-icon" src="{{ url_for('static', filename='icons/canva.svg') }}" alt="Canva logo" />
+            <span class="skill-name">Canva</span>
+          </div>
+          <div class="skill-card" style="--delay: 0.9s">
+            <span class="skill-icon">🤖</span>
+            <span class="skill-name">ChatGPT</span>
+          </div>
+          <div class="skill-card" style="--delay: 1.0s">
+            <span class="skill-icon">📊</span>
+            <span class="skill-name">Microsoft Excel</span>
+          </div>
+          <div class="skill-card" style="--delay: 1.1s">
+            <span class="skill-icon">📈</span>
+            <span class="skill-name">Microsoft PowerPoint</span>
+          </div>
+          <div class="skill-card" style="--delay: 1.2s">
+            <img class="skill-icon" src="{{ url_for('static', filename='icons/git-github.svg') }}" alt="Git and GitHub logo" />
+            <span class="skill-name">Git &amp; GitHub</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reveal" id="projects">
+      <div class="section-content">
+        <div class="section-header">
+          <h2 class="section-title">Projects</h2>
+          <p class="section-description">A selection of recent work built with production-ready architecture and polished UI.</p>
+        </div>
+        <div class="project-grid">
+          <article class="project-card" style="--delay: 0.1s">
+            <span class="project-label">Data Analysis Project</span>
+            <h3>Data Analysis on a YouTube Video</h3>
+            <p>A Python application to automate the analysis process for YouTube video audio and text.</p>
+            <div class="project-meta">
+              <span>Python</span>
+              <span>Jupyter notebook</span>
+              <span>NLTK</span>
+            </div>
+            <div class="project-meta">
+              <span>pytube</span>
+              <span>speech_recognition</span>
+              <span>Text Analytics</span>
+            </div>
+            <ul class="project-list">
+              <li>Extract audio from YouTube video and download as MP3.</li>
+              <li>Convert MP3 to WAV for speech recognition.</li>
+              <li>Use Google Speech Recognition to transcribe the WAV file to text.</li>
+              <li>Analyze the transcript using NLTK text analytics.</li>
+            </ul>
+            <a href="https://github.com/Developer-Arpits/-Data-Analysis-on-a-YouTube-video." class="project-link" target="_blank" rel="noopener">View details</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reveal" id="achievements">
+      <div class="section-content">
+        <div class="section-header">
+          <h2 class="section-title">Achievements</h2>
+          <p class="section-description">Verified certifications and workshops that demonstrate my technical training and professional development.</p>
+        </div>
+        <div class="achievement-grid">
+          <article class="achievement-card" style="--delay: 0.1s">
+            <h3>Python Essentials 1</h3>
+            <p class="achievement-issuer">Cisco Networking Academy</p>
+            <a href="https://www.credly.com/badges/370f96ff-fa7a-44c9-9e50-1453b606c12c/public_url" target="_blank" rel="noopener" class="achievement-link">View Credential</a>
+          </article>
+          <article class="achievement-card" style="--delay: 0.2s">
+            <h3>SQL</h3>
+            <p class="achievement-issuer">SoloLearn</p>
+            <a href="https://api2.sololearn.com/v2/certificates/CC-O5BKJPQH/image/png?t=639160005372228300" target="_blank" rel="noopener" class="achievement-link">View Credential</a>
+          </article>
+          <article class="achievement-card" style="--delay: 0.3s">
+            <h3>AI Tools Workshop</h3>
+            <p class="achievement-issuer">Be10x</p>
+            <a href="https://certx.in/certificate/0270772f-3809-4400-b29b-1e1c61cd09971412588" target="_blank" rel="noopener" class="achievement-link">View Credential</a>
+          </article>
+          <article class="achievement-card" style="--delay: 0.4s">
+            <h3>Generative AI</h3>
+            <p class="achievement-issuer">LinkedIn</p>
+            <a href="https://www.linkedin.com/learning/" target="_blank" rel="noopener" class="achievement-link">View Credential</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reveal" id="experience">
+      <div class="section-content">
+        <div class="section-header">
+          <h2 class="section-title">Experience</h2>
+          <p class="section-description">Creative and technical roles with a strong focus on design, finance, and backend reliability.</p>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item" style="--delay: 0.1s">
+            <div class="timeline-indicator"></div>
+            <div class="timeline-body">
+              <span class="timeline-date">2023 — Present</span>
+              <h3>Freelance Graphic Designer &amp; Photographer</h3>
+              <p class="timeline-company">Self-Employed</p>
+              <ul>
+                <li>Designed logos, banners, brochures, and social media graphics for branding and marketing campaigns.</li>
+                <li>Created visual content with professional photography and cohesive brand storytelling.</li>
+                <li>Collaborated with clients to deliver customized creative solutions tailored to their needs.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="timeline-item" style="--delay: 0.2s">
+            <div class="timeline-indicator"></div>
+            <div class="timeline-body">
+              <span class="timeline-date">1 April 2024 — 30 April 2026</span>
+              <h3>Accountant &amp; Cashier</h3>
+              <p class="timeline-company">Bhawa’s Academy</p>
+              <ul>
+                <li>Managed daily cash transactions, fee collection, and financial record maintenance with accuracy.</li>
+                <li>Prepared invoices, receipts, and financial reports for administrative and accounting purposes.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="timeline-item" style="--delay: 0.3s">
+            <div class="timeline-indicator"></div>
+            <div class="timeline-body">
+              <span class="timeline-date">Aug 2025 — Jan 2026</span>
+              <h3>API Developer</h3>
+              <p class="timeline-company">MBG Card Private Limited</p>
+              <ul>
+                <li>Monitored and resolved backend issues to ensure high availability and reliability of services.</li>
+                <li>Maintained API endpoints and supported backend stability under production load.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reveal" id="contact">
+      <div class="section-content">
+        <h2 class="section-title">Contact</h2>
+        <p class="section-description">Get in touch with me</p>
+        <div class="contact-links">
+          <a href="mailto:arpitvishwakarma078@gmail.com" class="contact-btn btn-contact-1">📧 Email</a>
+          <a href="https://github.com/Developer-Arpits" target="_blank" class="contact-btn btn-contact-2">🐙 GitHub</a>
+          <a href="https://www.linkedin.com/in/arpit-vishwakarma-138973283/" target="_blank" class="contact-btn btn-contact-3">💼 LinkedIn</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 Arpit. Built with Python & Flask.</p>
+  </footer>
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
