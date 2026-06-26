@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Arpit Vishwakarma | Portfolio</title>
-  <link rel="stylesheet" href="/static/style.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
   <div class="bg-shape shape1"></div>
@@ -38,7 +38,7 @@ techniques. </p>
         <h3 class="section-subtitle">Technical Skills</h3>
         <div class="skills-grid">
           <div class="skill-card" style="--delay: 0.1s">
-            <img class="skill-icon" src="/static/icons/python.svg" alt="Python logo" />
+            <img class="skill-icon" src="{{ url_for('static', filename='icons/python.svg') }}" alt="Python logo" />
             <span class="skill-name">Python</span>
           </div>
           <div class="skill-card" style="--delay: 0.2s">
@@ -50,23 +50,23 @@ techniques. </p>
             <span class="skill-name">HTML5</span>
           </div>
           <div class="skill-card" style="--delay: 0.4s">
-            <img class="skill-icon" src="/static/icons/css3.svg" alt="CSS3 logo" />
+            <img class="skill-icon" src="{{ url_for('static', filename='icons/css3.svg') }}" alt="CSS3 logo" />
             <span class="skill-name">CSS3</span>
           </div>
           <div class="skill-card" style="--delay: 0.5s">
-            <img class="skill-icon" src="/static/icons/ms-access.svg" alt="MS Access logo" />
+            <img class="skill-icon" src="{{ url_for('static', filename='icons/ms-access.svg') }}" alt="MS Access logo" />
             <span class="skill-name">MS Access</span>
           </div>
           <div class="skill-card" style="--delay: 0.6s">
-            <img class="skill-icon" src="/static/icons/wordpress.svg" alt="WordPress logo" />
+            <img class="skill-icon" src="{{ url_for('static', filename='icons/wordpress.svg') }}" alt="WordPress logo" />
             <span class="skill-name">WordPress</span>
           </div>
           <div class="skill-card" style="--delay: 0.7s">
-            <img class="skill-icon" src="/static/icons/adobe-photoshop.svg" alt="Adobe Photoshop logo" />
+            <img class="skill-icon" src="{{ url_for('static', filename='icons/adobe-photoshop.svg') }}" alt="Adobe Photoshop logo" />
             <span class="skill-name">Adobe Photoshop</span>
           </div>
           <div class="skill-card" style="--delay: 0.8s">
-            <img class="skill-icon" src="/static/icons/canva.svg" alt="Canva logo" />
+            <img class="skill-icon" src="{{ url_for('static', filename='icons/canva.svg') }}" alt="Canva logo" />
             <span class="skill-name">Canva</span>
           </div>
           <div class="skill-card" style="--delay: 0.9s">
@@ -82,7 +82,7 @@ techniques. </p>
             <span class="skill-name">Microsoft PowerPoint</span>
           </div>
           <div class="skill-card" style="--delay: 1.2s">
-            <img class="skill-icon" src="/static/icons/git-github.svg" alt="Git and GitHub logo" />
+            <img class="skill-icon" src="{{ url_for('static', filename='icons/git-github.svg') }}" alt="Git and GitHub logo" />
             <span class="skill-name">Git &amp; GitHub</span>
           </div>
         </div>
@@ -218,6 +218,6 @@ techniques. </p>
     <p>© 2026 Arpit. Built with Python & Flask.</p>
   </footer>
 
-  <script src="/static/script.js"></script>
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
 </body>
 </html>

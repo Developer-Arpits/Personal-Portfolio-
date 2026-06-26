@@ -11,7 +11,7 @@ app = Flask(__name__,
 
 @app.route("/")
 def home():
-    return send_from_directory(app.static_folder, "index.html")
+    return render_template("index.html")
 
 @app.route("/static/<path:filename>")
 def serve_static(filename):
