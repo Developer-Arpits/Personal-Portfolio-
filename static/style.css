@@ -171,36 +171,6 @@ body {
   transform: translateY(-2px);
 }
 
-/* Scroll Indicator */
-.scroll-indicator {
-  position: absolute;
-  bottom: 30px;
-  left: 50%;
-  transform: translateX(-100%);
-  animation: bounce 2s infinite;
-}
-
-.scroll-indicator span {
-  display: block;
-  width: 20px;
-  height: 30px;
-  border: 2px solid var(--accent);
-  border-radius: 10px;
-  position: relative;
-}
-
-.scroll-indicator span::after {
-  content: '';
-  position: absolute;
-  top: 8px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 2px;
-  height: 6px;
-  background: var(--accent);
-  border-radius: 1px;
-  animation: scroll-down 1.5s infinite;
-}
 
 /* Sections */
 .section {
