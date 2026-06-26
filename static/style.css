@@ -61,7 +61,7 @@ body {
 
 /* Hero Section */
 .hero {
-  min-height: calc(100vh - 20px);
+  min-height: calc(50vh - 20px);
   display: grid;
   place-items: center;
   text-align: center;
