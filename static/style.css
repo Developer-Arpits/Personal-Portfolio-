@@ -176,7 +176,7 @@ body {
   position: absolute;
   bottom: 30px;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-100%);
   animation: bounce 2s infinite;
 }
 
