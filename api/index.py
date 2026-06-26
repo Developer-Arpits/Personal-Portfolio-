@@ -1,4 +1,4 @@
-from flask import Flask, render_template, send_from_directory
+from flask import Flask, send_from_directory
 import os
 
 # Get the absolute path to the parent directory
@@ -11,7 +11,7 @@ app = Flask(__name__,
 
 @app.route("/")
 def home():
-    return render_template("index.html")
+    return send_from_directory(app.static_folder, "index.html")
 
 @app.route("/static/<path:filename>")
 def serve_static(filename):
